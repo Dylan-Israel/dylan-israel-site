@@ -1,0 +1,47 @@
+@import 'src/styles/colors';
+
+nav {
+  background-color: rgba(30, 30, 30, 0.9);
+
+  ul {
+    display: grid;
+    grid-template-columns: auto auto auto 1fr;
+    grid-gap: 20px;
+    padding: 20px 5px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    li {
+      color: white;
+      display: inline-block;
+      font-weight: bold;
+
+      &.home-icon {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        padding-left: 15px;
+        font-size: 25px;
+
+        .highlight {
+          color: $green;
+          margin-left: 10px;
+        }
+      }
+
+      img {
+        width: 30px;
+      }
+
+      &:last-child {
+        justify-self: end;
+        padding-right: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}

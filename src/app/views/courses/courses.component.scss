@@ -1,0 +1,15 @@
+h2 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 25px 25px 25px;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  img {
+    width: 100%;
+  }
+}

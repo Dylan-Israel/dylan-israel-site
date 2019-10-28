@@ -1,0 +1,41 @@
+@import 'src/styles/colors';
+
+#email-signup-container {
+  display: grid;
+  grid-gap: 20px;
+  padding: 45px 25%;
+  background-color: $blue;
+
+  input[type=text] {
+    padding: 15px 10px;
+    width: 100%;
+    border: 1px solid black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  h3,
+  h4 {
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-style: italic;
+  }
+
+  #email {
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    button {
+      text-transform: uppercase;
+      background-color: black;
+      color: white;
+      padding: 10px 15px;
+      border: 1px solid black;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      font-weight: bold;
+    }
+  }
+}
