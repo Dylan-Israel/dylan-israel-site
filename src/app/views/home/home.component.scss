@@ -1,112 +1,119 @@
 @import 'src/styles/colors';
 
-#home-container {
+#main-container {
   display: grid;
-  text-align: center;
-  color: white;
-  position: relative;
 
-  #banner {
-    max-height: 300px;
-    width: 100%;
-    object-fit: cover;
-  }
+  grid-template-columns: 1fr auto;
+  grid-gap: 10px;
 
-  #bio {
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    width: 70%;
-    transform: translate(-50%, -50%);
-
-    h1 {
-      padding: 10px;
-      text-transform: uppercase;
-      font-size: 50px;
-    }
-  }
-
-  #projects {
-    padding: 40px 40px;
+  #home-container {
     display: grid;
-    grid-gap: 10px;
+    text-align: center;
+    color: white;
+    position: relative;
 
-    h2 {
-      text-transform: uppercase;
-      margin-bottom: 40px;
+    #banner {
+      max-height: 300px;
+      width: 100%;
+      object-fit: cover;
     }
 
-    .statistic {
-      color: $green;
-      font-weight: bold;
+    #bio {
+      position: absolute;
+      top: 120px;
+      left: 50%;
+      width: 70%;
+      transform: translate(-50%, -50%);
+
+      h1 {
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 50px;
+      }
     }
 
-    a {
-      color: $blue;
-      font-weight: bold;
-    }
-
-    p {
-      text-align: left;
-    }
-
-    #youtube {
-      background-color: $secondary-background;
-      padding: 30px 20px;
+    #projects {
+      padding: 40px 40px;
       display: grid;
-      grid-template-columns: auto 1fr;
-      grid-gap: 20px;
-      align-items: center;
+      grid-gap: 10px;
 
-      .fa-youtube {
-        color: $red;
-        display: block;
-        font-size: 100px;
+      h2 {
+        text-transform: uppercase;
+        margin-bottom: 40px;
       }
 
-      #youtube-description {
+      .statistic {
+        color: $green;
+        font-weight: bold;
+      }
+
+      a {
+        color: $blue;
+        font-weight: bold;
+      }
+
+      p {
+        text-align: left;
+      }
+
+      #youtube {
+        background-color: $secondary-background;
+        padding: 30px 20px;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-row-gap: 10px;
+        grid-template-columns: auto 1fr;
+        grid-gap: 20px;
+        align-items: center;
+
+        .fa-youtube {
+          color: $red;
+          display: block;
+          font-size: 100px;
+        }
+
+        #youtube-description {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-row-gap: 10px;
+        }
+
       }
 
-    }
-
-    #self-taught-or-not {
-      background-color: $secondary-background;
-      padding: 30px 20px;
-      display: grid;
-      grid-template-columns: auto 1fr;
-      grid-gap: 20px;
-      align-items: center;
-
-      #podcast-description {
+      #self-taught-or-not {
+        background-color: $secondary-background;
+        padding: 30px 20px;
         display: grid;
-        grid-row-gap: 10px;
+        grid-template-columns: auto 1fr;
+        grid-gap: 20px;
+        align-items: center;
+
+        #podcast-description {
+          display: grid;
+          grid-row-gap: 10px;
+        }
+
+        img {
+          width: 120px;
+        }
       }
 
-      img {
-        width: 120px;
-      }
-    }
-
-    #courses {
-      background-color: $secondary-background;
-      padding: 30px 20px;
-      display: grid;
-      grid-template-columns: auto 1fr;
-      grid-gap: 20px;
-      align-items: center;
-
-      .fa-laptop-code {
-        color: $twitter-blue;
-        display: block;
-        font-size: 100px;
-      }
-
-      #courses-description {
+      #courses {
+        background-color: $secondary-background;
+        padding: 30px 20px;
         display: grid;
-        grid-row-gap: 10px;
+        grid-template-columns: auto 1fr;
+        grid-gap: 20px;
+        align-items: center;
+
+        .fa-laptop-code {
+          color: $twitter-blue;
+          display: block;
+          font-size: 100px;
+        }
+
+        #courses-description {
+          display: grid;
+          grid-row-gap: 10px;
+        }
       }
     }
   }

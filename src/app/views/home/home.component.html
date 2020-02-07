@@ -1,75 +1,77 @@
-<div id="home-container">
-  <img id="banner" src="/assets/home-banner.jpg" alt="home page banner" />
+<div id="main-container">
+  <div id="home-container">
+    <img id="banner" src="/assets/home-banner.jpg" alt="home page banner" />
 
-  <div id="bio">
-    <h1>Dylan C. Israel</h1>
-    <h3>Engineer | Mentor | Educator</h3>
+    <div id="bio">
+      <h1>Dylan C. Israel</h1>
+      <h3>Engineer | Mentor | Educator</h3>
+    </div>
+
+
+    <div id="projects">
+      <h2>Projects</h2>
+
+      <div id="youtube">
+        <div>
+          <i class="fab fa-youtube"></i>
+          <h5>YouTube Channel</h5>
+        </div>
+
+        <div id="youtube-description" class="project">
+          <p>
+            Dylan teaches over
+            <span class="statistic">{{ channelStats.subscriberCount }}</span>
+            subscribers on his YouTube channel. He has released
+            <span class="statistic">{{ channelStats.videoCount }}</span> videos
+            and counting including tutorials, industry news and projects.
+          </p>
+          <p>
+            Dylan is particularly proud of how he live streamed building
+            <a href="https://www.VideoDevDocs.com">Video Dev Docs</a> to showcase
+            how to build a production level application. As well as his series
+            <a href="https://www.youtube.com/watch?v=cbNljGlusDU&list=PLHdCowjFIBmJIlQAnIp8ZTTUmgwoN5L1N"
+              target="blank">Code Like a Pro </a>designed to teach junior developers clean code, SOLID principles, &
+            testing.
+          </p>
+        </div>
+      </div>
+
+      <div id="self-taught-or-not">
+        <div id="podcast-description">
+          <p>
+            <a href="https://www.selftaughtornot.com">Self-taught or Not</a> is a
+            24 episode podcast covering the dos and don'ts of software
+            engineering. Cohosted with 2 time author and fellow content creator
+            Erik Hanchett.
+          </p>
+
+          <p>
+            Erik has a traditional background with a bachelors in Computer Science
+            and masters in business. Dylan is a 2 time college drop out and taught
+            himself software engineering through free resources. One self-taught
+            and one not.
+          </p>
+        </div>
+
+        <div>
+          <img src="/assets/self-taught-or-not.png" alt="" />
+          <h5>Podcast</h5>
+        </div>
+      </div>
+
+      <div id="courses">
+        <div>
+          <i class="fas fa-laptop-code"></i>
+          <h5>Courses</h5>
+        </div>
+        <div id="courses-description">
+          <p>Dylan's passion for self education has continued to grow from a life long student and now educator. He has
+            released coures on JavaScript and Front on Udemy, Scrimba, Thinkster, SkillShare, & Udemy.</p>
+          <p>Dylan has a lot of courses he is proud of, but his 100 Challenges Series is his favorite where he always
+            gives 100 problems or learning objectives for his students to master.</p>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- <app-email-signup></app-email-signup> -->
-
-  <div id="projects">
-    <h2>Projects</h2>
-
-    <div id="youtube">
-      <div>
-        <i class="fab fa-youtube"></i>
-        <h5>YouTube Channel</h5>
-      </div>
-
-      <div id="youtube-description" class="project">
-        <p>
-          Dylan teaches over
-          <span class="statistic">{{ channelStats.subscriberCount }}</span>
-          subscribers on his YouTube channel. He has released
-          <span class="statistic">{{ channelStats.videoCount }}</span> videos
-          and counting including tutorials, industry news and projects.
-        </p>
-        <p>
-          Dylan is particularly proud of how he live streamed building
-          <a href="https://www.VideoDevDocs.com">Video Dev Docs</a> to showcase
-          how to build a production level application. As well as his series
-          <a href="https://www.youtube.com/watch?v=cbNljGlusDU&list=PLHdCowjFIBmJIlQAnIp8ZTTUmgwoN5L1N"
-            target="blank">Code Like a Pro </a>designed to teach junior developers clean code, SOLID principles, &
-          testing.
-        </p>
-      </div>
-    </div>
-
-    <div id="self-taught-or-not">
-      <div id="podcast-description">
-        <p>
-          <a href="https://www.selftaughtornot.com">Self-taught or Not</a> is a
-          24 episode podcast covering the dos and don'ts of software
-          engineering. Cohosted with 2 time author and fellow content creator
-          Erik Hanchett.
-        </p>
-
-        <p>
-          Erik has a traditional background with a bachelors in Computer Science
-          and masters in business. Dylan is a 2 time college drop out and taught
-          himself software engineering through free resources. One self-taught
-          and one not.
-        </p>
-      </div>
-
-      <div>
-        <img src="/assets/self-taught-or-not.png" alt="" />
-        <h5>Podcast</h5>
-      </div>
-    </div>
-
-    <div id="courses">
-      <div>
-        <i class="fas fa-laptop-code"></i>
-        <h5>Courses</h5>
-      </div>
-      <div id="courses-description">
-        <p>Dylan's passion for self education has continued to grow from a life long student and now educator. He has
-          released coures on JavaScript and Front on Udemy, Scrimba, Thinkster, SkillShare, & Udemy.</p>
-        <p>Dylan has a lot of courses he is proud of, but his 100 Challenges Series is his favorite where he always
-          gives 100 problems or learning objectives for his students to master.</p>
-      </div>
-    </div>
-  </div>
 </div>
