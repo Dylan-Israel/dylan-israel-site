@@ -49,8 +49,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test:no-watch",
-      "pre-push": "npm test:no-watch"
+      "pre-commit": "npm run test:no-watch",
+      "pre-push": "npm run test:no-watch"
     }
   }
 }

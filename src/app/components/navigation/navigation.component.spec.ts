@@ -5,4 +5,8 @@ describe('Navigation Component', () => {
     // assert
     expect(NavigationComponent).toBeDefined();
   });
+
+  it('Fails', () => {
+    expect(2 + 3).toBe(4);
+  });
 });
