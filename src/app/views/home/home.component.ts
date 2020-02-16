@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-        public channelStats: any = {};
+          public channelStats: any = {};
 
   public async ngOnInit() {
     this.channelStats = await this.getChannelStats();
