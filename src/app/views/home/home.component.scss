@@ -1,16 +1,16 @@
-@import 'src/styles/colors';
+            @import 'src/styles/colors';
 
-#main-container {
-  display: grid;
+            #main-container {
+              display: grid;
 
-  grid-template-columns: 1fr auto;
-  grid-gap: 10px;
+              grid-template-columns: 1fr auto;
+              grid-gap: 10px;
 
-  #home-container {
-    display: grid;
-    text-align: center;
-    color: white;
-    position: relative;
+              #home-container {
+                display: grid;
+                text-align: center;
+                color: white;
+                position: relative;
 
     #banner {
       max-height: 300px;
