@@ -12,6 +12,11 @@
     "e2e": "ng e2e"
   },
   "private": true,
+  "husky": {
+    "hooks": {
+      "pre-push": "branch-naming-check"
+    }
+  },
   "dependencies": {
     "@angular/animations": "~8.2.0",
     "@angular/common": "~8.2.0",
@@ -48,10 +53,5 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "branch-naming-check"
-    }
   }
 }
