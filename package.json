@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "^8.2.1",
     "@fortawesome/fontawesome-free": "^5.10.1",
+    "branch-naming-check": "^1.0.2",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
@@ -33,7 +34,6 @@
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
-    "branch-naming-check": "^1.0.2",
     "codelyzer": "^5.0.0",
     "husky": "^4.2.3",
     "jasmine-core": "~3.4.0",
@@ -50,7 +50,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test:no-watch",
       "pre-push": "branch-naming-check '^(STORY|PBI)-\\d+(\\-.+|$)'"
     }
   }
