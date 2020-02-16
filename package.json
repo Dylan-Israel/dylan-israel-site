@@ -8,7 +8,8 @@
     "test": "ng test",
     "test:no-watch": "ng test --watch=false",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "spell-check": "cspell src/**"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +22,7 @@
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "^8.2.1",
     "@fortawesome/fontawesome-free": "^5.10.1",
+    "branch-naming-check": "^1.0.2",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
@@ -34,6 +36,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "cspell": "^4.0.47",
     "husky": "^4.2.3",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
@@ -49,7 +52,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test:no-watch"
+      "pre-commit": "npm run test:no-watch && npm run spell-check",
+      "pre-push": "branch-naming-check '^(STORY|PBI)-\\d+(\\-.+|$)'"
     }
   }
 }

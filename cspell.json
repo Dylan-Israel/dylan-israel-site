@@ -1,0 +1,12 @@
+{
+  "version": "0.1",
+  "language": "en",
+  "words": [
+    "youtube",
+    "udemy",
+    "scrimba",
+    "thinkster",
+    "signup"
+  ],
+  "ignorePaths": ["polyfills.ts", "**/assets/**", "**.scss", "**.html"]
+}
