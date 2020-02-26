@@ -1,9 +1,11 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { APP_ROUTES } from './app.routes';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { TranslocoRootModule } from './transloco-root.module';
 import { CourseRedirectComponent } from './views/courses/components/course-redirect/course-redirect.component';
 import { CoursesComponent } from './views/courses/courses.component';
 import { EmailSignupComponent } from './views/home/components/email-signup/email-signup.component';
@@ -24,7 +26,8 @@ import { HomeComponent } from './views/home/home.component';
       scrollPositionRestoration: 'enabled',
       anchorScrolling: 'enabled'
     }),
-
+    HttpClientModule,
+    TranslocoRootModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

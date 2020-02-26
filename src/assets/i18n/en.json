@@ -1,0 +1,7 @@
+{
+  "navigation": {
+    "courses": "Courses",
+    "resume": "Resume",
+    "devfest": "{{ conference }} Slides"
+  }
+}

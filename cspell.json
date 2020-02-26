@@ -1,12 +1,19 @@
 {
-  "version": "0.1",
-  "language": "en",
-  "words": [
-    "youtube",
-    "udemy",
-    "scrimba",
-    "thinkster",
-    "signup"
-  ],
-  "ignorePaths": ["polyfills.ts", "**/assets/**", "**.scss", "**.html"]
+    "version": "0.1",
+    "language": "en",
+    "words": [
+        "ngneat",
+        "scrimba",
+        "signup",
+        "thinkster",
+        "TRANSLOCO",
+        "udemy",
+        "youtube"
+    ],
+    "ignorePaths": [
+        "polyfills.ts",
+        "**/assets/**",
+        "**.scss",
+        "**.html"
+    ]
 }
