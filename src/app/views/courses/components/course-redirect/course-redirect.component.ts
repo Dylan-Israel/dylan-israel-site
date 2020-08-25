@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { CouponCodeService } from '../../services/coupon-code/coupon-code.service';
 
 @Component({
   selector: 'app-course-redirect',
@@ -7,9 +8,11 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./course-redirect.component.scss']
 })
 export class CourseRedirectComponent implements OnInit {
-  @Input() public courses: { courseKey: string, urlTitle: string }[] = [];
+  public courses: { courseKey: string, urlTitle: string }[] = [];
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private couponCodeService: CouponCodeService) {
+    this.courses = this.couponCodeService.courses;
+  }
 
   public ngOnInit() {
     this.init();
@@ -26,28 +29,16 @@ export class CourseRedirectComponent implements OnInit {
   }
 
   public redirectIfValidCourse(courseQueryString: string): void {
-    const couponCode = this.getCurrentMonthsCode();
 
-    for (const course of this.courses) {
+    for (const course of this.couponCodeService.courses) {
       if (course.courseKey === courseQueryString) {
-        this.redirectByCourse(course.urlTitle, couponCode);
+        this.redirectByCourse(course);
         break;
       }
     }
   }
 
-  private getCurrentMonthsCode(): string {
-    const todaysDate = new Date();
-    const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
-    const todaysMonth = months[todaysDate.getMonth()];
-    const todaysYear = todaysDate.getUTCFullYear();
-
-    return `${todaysMonth}${todaysYear}`;
-  }
-
-  private redirectByCourse(courseName: string, couponCode: string) {
-    const base = 'https://www.udemy.com/course';
-    const fullUrl = `${base}/${courseName}/?couponCode=${couponCode}`;
-    window.location.href = fullUrl;
+  private redirectByCourse(course: { courseKey: string, urlTitle: string, url?: string }) {
+    window.location.href = course.url;
   }
 }

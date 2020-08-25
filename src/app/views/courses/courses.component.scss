@@ -1,9 +1,18 @@
-h2 {
-  text-align: center;
+h2,
+h3 {
   color: white;
-  text-transform: uppercase;
-  padding: 0 25px 25px 25px;
+  text-align: center;
 }
+
+h2 {
+  text-transform: uppercase;
+  padding: 0 25px 10px 25px;
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
 
 article {
   display: grid;

@@ -1,23 +1,12 @@
 <h2>Courses</h2>
+<h3>Use Coupon Code '{{currentMonthsCode}}' to save!!!</h3>
 
 <article id="courses">
-  <section>
-    <a href="https://www.udemy.com/100-algorithms-challenge/?couponCode=CODINGGOD">
-      <img src="/assets/100-algorithms.jpg" alt="">
-    </a>
-  </section>
-
-  <section id="front-end-course">
-    <a href="https://www.udemy.com/100-front-end-interview-questions-challenge/?couponCode=CODINGGOD">
-      <img src="/assets/front-end-course.jpg" alt="">
-    </a>
-  </section>
-
-  <section>
-    <a href="https://www.udemy.com/javascript-360/?couponCode=CODINGGOD10">
-      <img src="/assets/javascript-course.jpg" alt="">
+  <section *ngFor="let course of courses">
+    <a [href]="course.url">
+      <img [src]="course.thumbnailUrl" [alt]="course.urlTitle">
     </a>
   </section>
 </article>
 
-<app-course-redirect [courses]="courses"></app-course-redirect>
+<app-course-redirect></app-course-redirect>
