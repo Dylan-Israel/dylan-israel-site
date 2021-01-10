@@ -1,3 +1,5 @@
+@import 'src/styles/breakPoints';
+
 h2,
 h3 {
   color: white;
@@ -17,6 +19,14 @@ h3 {
 article {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: 1fr;
+  }
 
   img {
     width: 100%;

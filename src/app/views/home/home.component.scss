@@ -1,4 +1,5 @@
 @import 'src/styles/colors';
+@import 'src/styles/breakPoints';
 
 #main-container {
   display: grid;
@@ -30,7 +31,7 @@
       h1 {
         padding: 10px;
         text-transform: uppercase;
-        font-size: 50px;
+        font-size: 1.5rem;
       }
     }
 
@@ -66,6 +67,10 @@
         grid-gap: 20px;
         align-items: center;
 
+        @media screen and (max-width: $mobile) {
+          grid-template-columns: 1fr;
+        }
+
         .fa-youtube {
           color: $red;
           display: block;
@@ -88,6 +93,10 @@
         grid-gap: 20px;
         align-items: center;
 
+        @media screen and (max-width: $mobile) {
+          grid-template-columns: 1fr;
+        }
+
         #podcast-description {
           display: grid;
           grid-row-gap: 10px;
@@ -105,6 +114,10 @@
         grid-template-columns: auto 1fr;
         grid-gap: 20px;
         align-items: center;
+
+        @media screen and (max-width: $mobile) {
+          grid-template-columns: 1fr;
+        }
 
         .fa-laptop-code {
           color: $twitter-blue;
