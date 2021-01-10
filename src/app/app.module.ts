@@ -21,9 +21,10 @@ import { HomeComponent } from './views/home/home.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot(APP_ROUTES, {
-      scrollPositionRestoration: 'enabled',
-      anchorScrolling: 'enabled'
-    }),
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling: 'enabled',
+    relativeLinkResolution: 'legacy'
+}),
 
   ],
   providers: [],
