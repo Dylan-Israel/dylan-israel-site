@@ -9,6 +9,10 @@ import { environment } from '../environments/environment';
 export class AppComponent {
 
   constructor() {
+    this.logPortfolioDetails();
+  }
+
+  private logPortfolioDetails(): void {
     if (environment.production) {
       const styles = 'font-size: 1.25em; font-weight: bold; padding: 5px;'
       console.group(`%c👨‍💻 Hi, I'm Dylan C. Israel and Thanks for checking out my Portfolio!`, styles);

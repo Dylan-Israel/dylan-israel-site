@@ -24,6 +24,8 @@
       left: 50%;
       width: 70%;
       transform: translate(-50%, -50%);
+      color: $quaternary-background;
+      text-shadow: 1px 1px 0 #FFF;
 
       h1 {
         padding: 10px;
