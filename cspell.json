@@ -6,7 +6,8 @@
     "udemy",
     "scrimba",
     "thinkster",
-    "signup"
+    "signup",
+    "Scroller"
   ],
   "ignorePaths": ["polyfills.ts", "**/assets/**", "**.scss", "**.html"]
 }
