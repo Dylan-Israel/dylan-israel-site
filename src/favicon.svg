@@ -1,0 +1,25 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    circle {
+      fill: #1e1e1e;
+    }
+
+    text {
+      font-weight: bold;
+      fill: white;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      circle {
+        fill: white;
+      }
+
+      text {
+        fill: black;
+      }
+    }
+  </style>
+
+  <circle cx="62.5" cy="62.5" r="50" />
+  <text x="50%" y="50%" text-anchor="middle" font-size="60px" font-family="Arial" dy=".3em">DI</text>
+</svg>
