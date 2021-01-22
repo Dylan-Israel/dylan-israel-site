@@ -15,6 +15,7 @@ button {
   visibility: hidden;
   @include box-shadow();
   outline: none;
+  cursor: pointer;
 
   &.is-shown {
     height: 50px;
