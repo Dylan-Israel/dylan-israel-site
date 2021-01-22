@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { APP_ROUTES } from './app.routes';
+import { FooterComponent } from './components/footer/footer.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { TopOfPageComponent } from './components/top-of-page/top-of-page.component';
 import { CourseRedirectComponent } from './views/courses/components/course-redirect/course-redirect.component';
@@ -18,7 +19,8 @@ import { HomeComponent } from './views/home/home.component';
     CoursesComponent,
     EmailSignupComponent,
     CourseRedirectComponent,
-    TopOfPageComponent
+    TopOfPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
