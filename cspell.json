@@ -8,7 +8,9 @@
     "thinkster",
     "signup",
     "Scroller",
-    "Arial"
+    "Arial",
+    "pizzapokerguy",
+    "repos"
   ],
   "ignorePaths": ["polyfills.ts", "**/assets/**", "**.scss", "**.html"]
 }

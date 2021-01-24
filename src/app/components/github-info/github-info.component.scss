@@ -1,0 +1,43 @@
+@import 'src/styles/colors';
+
+.github-container {
+  padding: 2rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3910&q=80');
+  background-size: cover;
+  display: grid;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  i {
+    color: white;
+    transition: all 0.3s;
+    font-size: 1.5rem;
+
+    &.fa-github {
+      font-size: 3rem;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  .stats {
+    color: white;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-gap: 2rem;
+    margin-top: 1.5rem;
+
+    .stat {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+    }
+  }
+}
