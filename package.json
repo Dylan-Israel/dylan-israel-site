@@ -49,11 +49,5 @@
     "ts-node": "~7.0.0",
     "tslint": "~6.1.0",
     "typescript": "~4.0.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test:no-watch && npm run spell-check",
-      "pre-push": "branch-naming-check '^(STORY|PBI)-\\d+(\\-.+|$)'"
-    }
   }
 }
